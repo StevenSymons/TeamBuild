@@ -1,0 +1,39 @@
+.jumbo-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 600px;
+  background: linear-gradient(180deg, #ffffff 0%, #f2f7ff 100%);
+}
+
+.jumbotron {
+  position: relative;
+  grid-column: 2 / 2;
+  grid-row: 2;
+  width: 700px;
+  margin-left: -100px;
+}
+
+.jumbo {
+  letter-spacing: 0.02em;
+  color: #333333;
+}
+
+.jumbo-title {
+  position: absolute;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 44px;
+}
+
+.jumbo-text {
+  margin: 60px 0 50px 0;
+  padding-left: 5px;
+  font-size: 20px;
+  line-height: 164.3%;
+}
+
+.jumbo-title > ins {
+  text-decoration: none;
+  color: #a291ef;
+}
+

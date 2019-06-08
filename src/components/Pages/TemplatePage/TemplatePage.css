@@ -1,0 +1,12 @@
+.background {
+    position: relative;
+}
+
+.content-box {
+    position: absolute;
+    z-index: 5;
+    top: 100px;
+    width: 100%;
+}
+
+/* Write your code below */

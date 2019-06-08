@@ -1,0 +1,59 @@
+.motiv-container {
+  margin: 0 auto;
+  height: 700px;
+  justify-content: center;
+  background-color: #ffffff;
+  display: grid;
+  grid-template-columns: 0.3fr 0.3fr 0.3fr;
+  grid-template-rows: 50px 500px 0px;
+  letter-spacing: 0.01em;
+}
+
+.item-box {
+  position: relative;
+  height: 430px;
+  width: 400px;
+  margin: auto;
+  text-align: center;
+  grid-row: 2;
+}
+
+.item-box-left {
+  grid-column: 1 / 1;
+}
+
+.item-box-mid {
+  grid-column: 2 / 2;
+}
+
+.item-box-right {
+  grid-column: 3 / 3;
+}
+
+.illustration {
+  width: 290px;
+}
+
+.text {
+  position: absolute;
+  bottom: 0;
+  font-size: 18px;
+  color: #333350;
+}
+
+.text > p {
+  padding: 0 45px 0 45px;
+}
+
+.motiv-button {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+  grid-column: 2 / 2;
+  grid-row: 4;
+}
+
+.sv {
+  margin-bottom: -20px;
+  background-color: #f2f7ff;
+}

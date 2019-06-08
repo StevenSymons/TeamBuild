@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  width: 1440px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  padding: 14px;
+  letter-spacing: 0.01em;
+}
+
+.navbar__logo {
+  flex-grow: 3;
+  margin-left: 64px;
+  align-self: center;
+}
+
+.navbar__links {
+  margin-right: 161px;
+  align-self: center;
+}
+
+.navbar__links__link {
+  margin-left: 52px;
+}
+
+.navbar__login {
+  margin-right: 64px;
+  align-self: center;
+}
+
