@@ -17,7 +17,7 @@ const SignIn = props => {
   }
 
   function submitSignin() {
-    fetch("user/signin", {
+    fetch("user/login", {
       method: "POST",
       body: JSON.stringify({
         email: email,
