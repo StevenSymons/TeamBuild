@@ -3,6 +3,7 @@ const dotenv = require("dotenv").config();
 const logger = require("morgan");
 const bodyParser = require("body-parser");
 const userRoutes = require("./routes/userRoutes");
+const path = require("path");
 
 const app = express();
 const L_PORT = 5000;
@@ -13,6 +14,11 @@ app.use(logger(":user-agent"));
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("/client/build"));
+}
+app.use(express.static(path.join(__dirname, "client/build")));
 
 // Routes
 
