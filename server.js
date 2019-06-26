@@ -8,6 +8,8 @@ const path = require("path");
 const app = express();
 const L_PORT = 5000;
 
+app.set("trust proxy", true);
+
 app.use(logger(":date[iso]"));
 app.use(logger("dev"));
 app.use(logger(":user-agent"));
